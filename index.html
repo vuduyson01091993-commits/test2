@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý mượn thiết bị</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📦 Hệ thống quản lý mượn – trả thiết bị</h1>
+
+<div class="container">
+
+  <!-- Form người dùng -->
+  <div class="card">
+    <h2>Đăng ký mượn thiết bị</h2>
+    <form id="borrowForm">
+      <label>Họ tên:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Chọn thiết bị:</label>
+      <select id="device">
+        <option>Laptop Dell</option>
+        <option>Máy chiếu Epson</option>
+        <option>Micro không dây</option>
+        <option>iPad</option>
+        <option>Camera Sony</option>
+      </select>
+
+      <label>Ngày mượn:</label>
+      <input type="date" id="borrowDate" required>
+      <label>Giờ mượn:</label>
+      <input type="time" id="borrowTime" required>
+
+      <label>Ngày trả:</label>
+      <input type="date" id="returnDate" required>
+      <label>Giờ trả:</label>
+      <input type="time" id="returnTime" required>
+
+      <button type="submit">Gửi yêu cầu duyệt</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+
+  <!-- Form đăng nhập quản lý -->
+  <div class="card admin">
+    <h2>🔐 Đăng nhập quản lý</h2>
+    <input type="password" id="adminPass" placeholder="Nhập mật khẩu quản trị">
+    <button onclick="loginAdmin()">Đăng nhập</button>
+    <div id="adminPanel"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
