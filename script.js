@@ -14,7 +14,7 @@ document.getElementById("borrowForm").addEventListener("submit", e => {
     returnTime: document.getElementById("returnTime").value
   };
 
-  fetch(https://script.google.com/macros/s/AKfycbwxM0F0uB1auHNy2QujpH-En4TZ-4Y_7IkhVZlwZdWkxRbHFKhfEe4ZAQuXMzy5JH-M/exec, {
+  fetch(https://script.google.com/macros/s/AKfycbw5gfo7zGUe4E8NhKgVZlWRrKasKGlVn4z1AAwyckfjEvfUq8XdVLI0G1L8R0XEJN3K/exec, {
     method: "POST",
     body: JSON.stringify(data)
   })
