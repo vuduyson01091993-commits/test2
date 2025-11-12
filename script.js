@@ -24,6 +24,24 @@ document.getElementById("borrowForm").addEventListener("submit", e => {
   })
   .catch(err => alert("Lỗi gửi yêu cầu: " + err));
 });
+// ==== ĐĂNG NHẬP QUẢN LÝ ====
+function loginAdmin() {
+  const pass = document.getElementById("adminPass").value.trim();
+  const correctPass = "FICD2025"; // mật khẩu của bạn
+
+  if (pass === correctPass) {
+    alert("✅ Đăng nhập thành công!");
+    document.getElementById("adminPanel").innerHTML = `
+      <h2>📋 Quản lý thiết bị</h2>
+      <p>Bạn đã đăng nhập với quyền Quản lý.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1sW6XY-9uSD8Xllzs1eJWxffe1-jA_mU6q3usJsWVjOI/edit" target="_blank">
+        👉 Xem bảng quản lý trên Google Sheets
+      </a>
+    `;
+  } else {
+    alert("❌ Sai mật khẩu, vui lòng thử lại!");
+  }
+}
 
 // Quản trị viên đăng nhập
 function loginAdmin() {
