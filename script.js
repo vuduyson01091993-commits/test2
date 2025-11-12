@@ -14,7 +14,7 @@ document.getElementById("borrowForm").addEventListener("submit", e => {
     returnTime: document.getElementById("returnTime").value
   };
 
-  fetch(scriptURL, {
+  fetch(https://script.google.com/macros/s/AKfycbwxM0F0uB1auHNy2QujpH-En4TZ-4Y_7IkhVZlwZdWkxRbHFKhfEe4ZAQuXMzy5JH-M/exec, {
     method: "POST",
     body: JSON.stringify(data)
   })
